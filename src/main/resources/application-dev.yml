@@ -1,0 +1,24 @@
+server:
+    port: 8778
+
+debug: true
+
+spring:
+    cloud:
+        zookeeper:
+            connectString: 127.0.0.1:2181
+            enabled: false
+    sleuth:
+        enabled: false
+
+swagger:
+    basePackage: com.liutestapp.lcmapp001.controller
+    title: ctg-liutestapp-lcmapp001 RESTful APIs
+    description: ctg-liutestapp-lcmapp001 RESTful API
+    version: 1.0.0-SNAPSHOT
+    openApi:
+        group: OpenApi
+        basePackage: com.liutestapp.lcmapp001.controller
+        title: actg-liutestapp-lcmapp001 Open APIs
+        description: ctg-liutestapp-lcmapp001 Open API
+        version: 1.0.0-SNAPSHOT
